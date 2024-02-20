@@ -32,3 +32,12 @@ fun create(): pie {
     val price = readLine()!!.toDouble()
     return pie(name,testo,cream,ves,kalori,price)
 }
+fun chekprice (pie: pie) {
+    val chekpric = 200.0
+    if (pie.price >= chekpric )
+    {
+        println("Цена товара ${pie.name} высокая")
+    } else {
+        println("Цена товара ${pie.name} низкая")
+    }
+}
